@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaViajes">
+    <AbsoluteLayout>
+
+        <Image Source="vuelos.jpg" 
+           Aspect="AspectFill"
+           AbsoluteLayout.LayoutFlags="All" 
+               AbsoluteLayout.LayoutBounds="0,0,1,1" />
+        <Frame WidthRequest="350"
+           CornerRadius="30"
+           VerticalOptions="Center"
+           HorizontalOptions="CenterAndExpand"
+           BorderColor="#0c8ce9"
+           BackgroundColor="White"
+           Padding="20"
+           HasShadow="True"
+           AbsoluteLayout.LayoutFlags="All" 
+               AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <StackLayout>
+                <!-- Título centrado -->
+                <Label Text="Datos del Viaje"
+                   FontSize="24" FontAttributes="Bold"
+                   TextColor="DarkRed"
+                   HorizontalOptions="CenterAndExpand"/>
+
+                <!-- Campo de Punto de Partida con borde y esquinas redondeadas -->
+                <Label Text="Punto de partida:"
+                   Margin="0,0,0,0"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Frame CornerRadius="20" 
+                   Padding="10,5" 
+                   BorderColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                    <Picker x:Name="pickerPartida" WidthRequest="400"
+        TextColor="#406e9b" Title="Seleccione Punto de Partida">
+                        <Picker.Items>
+                            <x:String>aeropuerto1</x:String>
+                            <x:String>aeropuerto2</x:String>
+                            <x:String>aeropuerto3</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Frame>
+
+                <!-- Campo de Punto de Destino con borde y esquinas redondeadas -->
+                <Label Text="Punto del destino"
+                   Margin="0,0,0,0"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Frame CornerRadius="20" BorderColor="Black"
+                   Padding="10,5" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                    <Picker x:Name="pickerDestino" WidthRequest="400"
+        TextColor="#406e9b" Title="Seleccione Punto del Destino">
+                        <Picker.Items>
+                            <x:String>aeropuerto1</x:String>
+                            <x:String>aeropuerto2</x:String>
+                            <x:String>aeropuerto3</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Frame>
+
+                <!-- Campo de Fecha -->
+                <Label Text="Seleccione Fecha:"
+                   Margin="0,0,0,0"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Frame CornerRadius="20" BorderColor="Black"
+                       Padding="10,5"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                    <StackLayout Orientation="Horizontal" 
+                                 HorizontalOptions="Center">
+                        <!-- Botón "Seleccione Calendario" con ícono de calendario -->
+                        <DatePicker VerticalOptions="Center" x:Name="pickerFechasalida"
+                                    WidthRequest="400"/>
+                    </StackLayout>
+                </Frame>
+                <!-- Campo de Agregar Pasajeros con borde y esquinas redondeadas -->
+                <Label Text="Agregar Pasajeros:"
+                   Margin="0,0,0,0"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Frame CornerRadius="20" BorderColor="Black"
+                   Padding="10,5" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                    <Entry Placeholder="Ingrese Numero de pasajeros" 
+                           x:Name="txtpasajeros"
+                           Keyboard="Numeric" WidthRequest="400"/>
+                </Frame>
+                <!-- Agrega el Grid para los botones y la línea separadora -->             
+                <Button Text="Buscar Vuelos"
+                    BackgroundColor="#0d1140" 
+                    HeightRequest="50"
+                    TextColor="#b0a6f1"
+                    CornerRadius="20"
+                        Margin="0,20"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    WidthRequest="400"
+                    x:Name="btn_buscar_vuelos"
+                        Clicked="btn_buscar_vuelos_Clicked"
+                    AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9,-1,-1" />
+            </StackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

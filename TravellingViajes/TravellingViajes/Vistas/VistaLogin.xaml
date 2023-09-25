@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaLogin"
+             BackgroundColor="Blue"
+             >
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout VerticalOptions="Center" 
+             AbsoluteLayout.LayoutFlags="All" 
+             Margin="50,0"
+             AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Frame BackgroundColor="LightBlue" CornerRadius="20"
+                       BorderColor="Aquamarine">
+
+                    <StackLayout VerticalOptions="Center">
+                        <Label Text="Inicio de Sesion" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold" Margin="0,0,0,30"/>
+                        <Image Source="logoviajes.png" WidthRequest="150"/>
+                        <Frame CornerRadius="10" Padding="5"
+                       Margin="0,20,0,5" BorderColor="LightGray">
+                            <Entry FontSize="14" PlaceholderColor="#406e9b"
+                               x:Name="txtcorreo"
+                           Placeholder="Ingrese correo electronico"/>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+                       Margin="0,5,0,50" BorderColor="LightGray">
+                            <Entry FontSize="14" PlaceholderColor="#406e9b"
+                               x:Name="txtcontrasena"
+                           Placeholder="Ingrese contraseña" IsPassword="True"/>
+                        </Frame>
+                        <Button Text="Loguearse" BackgroundColor="#4a4eff" 
+                                TextColor="White" BorderColor="#1519c2"
+                                Margin="0,0,0,5" x:Name="btn_loguear"
+                                Clicked="btn_loguear_Clicked"
+                                BorderWidth="1" CornerRadius="10"/>
+                        <Button Text="Registrarse" BackgroundColor="#4a4eff" 
+                                Margin="0,5,0,0" x:Name="btn_registrar"
+                                TextColor="White" BorderColor="#1519c2"
+                                Clicked="btn_registrar_Clicked"
+                                BorderWidth="1" CornerRadius="10"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaPerfil">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="fondotravelling.jpg" Aspect="AspectFill"
+AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" />
+            <StackLayout VerticalOptions="Center" 
+             AbsoluteLayout.LayoutFlags="All" 
+             Margin="50,0"
+             AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Frame BackgroundColor="LightBlue" CornerRadius="20"
+                       BorderColor="Aquamarine">
+                    
+                    <StackLayout VerticalOptions="Center">
+                        <Frame x:Name="frameCerrar" HorizontalOptions="End" 
+                               CornerRadius="10" BackgroundColor="#ec322d"
+                               Padding="10">
+                        <Image Source="salir.png" WidthRequest="25" 
+                                Aspect="AspectFit">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="btn_cerrar_Clicked" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        </Frame>
+                        <Image Source="usuperfil.png" WidthRequest="150"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Margin="0,20,0,0">
+                                <Label Text="              Nombre:"/>
+                                <Frame Grid.Column="0" CornerRadius="10" Padding="5"
+           Margin="0,0,5,5" BorderColor="LightGray">
+                                    <Entry FontSize="14" x:Name="txtnombre" 
+               TextColor="#406e9b"
+               Text="Jefri" IsReadOnly="True"/>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" Margin="0,20,0,0">
+                                <Label Text=" Apellido Paterno:"/>
+                                <Frame Grid.Column="1" CornerRadius="10" Padding="5"
+           Margin="5,0,0,5" BorderColor="LightGray">
+                                    <Entry FontSize="14" x:Name="txtapellidopa" 
+               TextColor="#406e9b"
+               Text="Tuncar" IsReadOnly="True"/>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="2" Margin="0,20,0,0">
+                                <Label Text="Apellido Materno:"/>
+                                <Frame Grid.Column="2" CornerRadius="10" Padding="5"
+           Margin="5,0,0,5" BorderColor="LightGray">
+                                    <Entry FontSize="14" x:Name="txtapellidoma" 
+               TextColor="#406e9b"
+               Text="Pari" IsReadOnly="True"/>
+                                </Frame>
+                            </StackLayout>
+                        </Grid>
+                        <Label Text="Correo Electronico:" Margin="0,10,0,0"/>
+                        <Frame CornerRadius="10" Padding="5"
+                       Margin="0,0,0,0" BorderColor="LightGray">
+                            <Entry FontSize="14" PlaceholderColor="#406e9b"
+                               x:Name="txtcorreo"
+                           Placeholder="Jefry@gmail.com"/>
+                        </Frame>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="90" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Margin="0,10,0,0">
+                            <Label Text="Contraseña:"/>
+                            <Frame CornerRadius="10" 
+                                   Padding="5"
+           Margin="0,0,5,5" BorderColor="LightGray">
+                                <Entry FontSize="14" x:Name="txtcontrasena" 
+               TextColor="#406e9b"
+               Text="contraseña" IsReadOnly="True"/>
+                            </Frame>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" Margin="0,10,0,0">
+                                <Label Text="Edad:" Padding="10,0,0,0"/>
+                                <Frame Grid.Column="1" WidthRequest="20" CornerRadius="10" Padding="5"
+           Margin="5,0,0,5" BorderColor="LightGray">
+                                <Entry FontSize="14" x:Name="txtedad" 
+               TextColor="#406e9b"
+               Text="20" IsReadOnly="True"/>
+                            </Frame>
+                            </StackLayout>
+                        </Grid>
+                        <Button Text="Modificar datos" BackgroundColor="#4a4eff" 
+                                Margin="0,30,0,0" x:Name="btn_modificar"
+                                Clicked="btn_modificar_Clicked"
+                                TextColor="White" BorderColor="#1519c2"
+                                BorderWidth="1" CornerRadius="10"/>
+                        <Button Text="Actualizar" BackgroundColor="#4a4eff" 
+                                Margin="0,30,0,0" x:Name="btn_actualizar"
+                                Clicked="btn_actualizar_Clicked" IsVisible="false"
+                                TextColor="White" BorderColor="#1519c2"
+                                BorderWidth="1" CornerRadius="10"/>
+                        <Button Text="Regresar" BackgroundColor="#4a4eff" 
+                                Margin="0,5,0,0" x:Name="btn_regresar"
+                                Clicked="btn_regresar_Clicked" IsVisible="false"
+                                TextColor="White" BorderColor="#1519c2"
+                                BorderWidth="1" CornerRadius="10"/>
+                    </StackLayout>
+            </Frame>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

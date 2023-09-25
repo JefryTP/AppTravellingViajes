@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaNosotros">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!-- Imagen de fondo -->
+            <Image Source="fondotravelling.jpg" Aspect="AspectFill"
+               AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+            <!-- Contenido encima de la imagen de fondo -->
+            <StackLayout VerticalOptions="Center" 
+                         AbsoluteLayout.LayoutFlags="All" 
+                         Margin="30"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Frame CornerRadius="20" Margin="0,0,0,0" BorderColor="gray">
+                    <StackLayout>
+                        <Label Text="¿Quienes somos?" FontSize="18" Margin="0,0,0,0" FontAttributes="Bold"/>
+                        <Label FontSize="13"
+                               Text="Travelling Viajes es una empresa dedicada a hacer que los sueños de viaje se hagan realidad. Nuestra compañía se enorgullece de ofrecer soluciones de viaje personalizadas y experiencias inolvidables para nuestros clientes. A través de nuestra innovadora aplicación móvil y nuestro compromiso con la excelencia en el servicio al cliente, estamos transformando la forma en que las personas exploran el mundo."/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="20" Margin="0,10,0,0" BorderColor="gray">
+                    <StackLayout>
+                        <Label Text="Mision" FontSize="18" Margin="0,0,0,0" FontAttributes="Bold"/>
+                        <Label FontSize="13" 
+                               Text="En Travelling Viajes, nuestra misión es proporcionar experiencias de viaje excepcionales que enriquezcan la vida de nuestros clientes. Nos esforzamos por superar las expectativas al ofrecer itinerarios personalizados, opciones de alojamiento de calidad y actividades únicas. Al hacerlo, estamos creando recuerdos duraderos y fomentando el amor por los viajes en todo el mundo."/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="20" Margin="0,10,0,0" BorderColor="Gray">
+                    <StackLayout>
+                        <Label Text="Vision" FontSize="18" Margin="0,0,0,0" FontAttributes="Bold"/>
+                        <Label FontSize="13" 
+                               Text="Nuestra visión es convertirnos en un referente global en la industria de los viajes, reconocidos por nuestra innovación, calidad y compromiso con la sostenibilidad. Buscamos expandir nuestra presencia a nivel internacional, ofreciendo a nuestros clientes acceso a una amplia variedad de destinos y culturas. Al mismo tiempo, nos esforzamos por ser un actor responsable en la conservación del medio ambiente y el apoyo a las comunidades locales en cada destino que tocamos."/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaCrearViajes">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout VerticalOptions="Center" 
+     AbsoluteLayout.LayoutFlags="All" 
+     Margin="50,0"
+     AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Frame BackgroundColor="LightBlue" CornerRadius="20"
+               BorderColor="Aquamarine">
+
+                    <StackLayout VerticalOptions="Center">
+                        <Image Source="usuperfil.png" WidthRequest="150"/>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,20,0,5" BorderColor="LightGray">
+                            <Picker x:Name="pickerPartida" FontSize="14"
+                                    TextColor="#406e9b" Title="Seleccione Punto de Partida">
+                                <Picker.Items>
+                                    <x:String>aeropuerto1</x:String>
+                                    <x:String>aeropuerto2</x:String>
+                                    <x:String>aeropuerto3</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,0,0,5" BorderColor="LightGray">
+                            <Picker x:Name="pickerDestino" FontSize="14"
+        TextColor="#406e9b" Title="Seleccione Punto de Destino">
+                                <Picker.Items>
+                                    <x:String>aeropuerto1</x:String>
+                                    <x:String>aeropuerto2</x:String>
+                                    <x:String>aeropuerto3</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,0,0,5" BorderColor="LightGray">
+                            <Entry FontSize="14" PlaceholderColor="#406e9b"
+                       x:Name="txtagencia"
+                   Placeholder="Ingrese Nombre de la Agencia"/>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,0,0,5" BorderColor="LightGray">
+                            <Entry FontSize="14" PlaceholderColor="#406e9b"
+                       x:Name="txtprecio" Keyboard="Numeric"
+                   Placeholder="Ingrese Precio"/>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,0,0,5" BorderColor="LightGray">
+                            <DatePicker FontSize="14"
+                       x:Name="txtfechasalida"/>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,0,0,5" BorderColor="LightGray">
+                            <TimePicker FontSize="14" Format="T"
+                       x:Name="txthorasalida"/>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5"
+               Margin="0,0,0,5" BorderColor="LightGray">
+                            <TimePicker FontSize="14" Format="T"
+                       x:Name="txthorallegada"/>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5" IsVisible="false"
+               Margin="0,0,0,50" BorderColor="LightGray">
+                            <Entry FontSize="14" PlaceholderColor="#406e9b"
+                       x:Name="txtduracion"
+                   Placeholder="Ingrese Duracion" IsVisible="false"/>
+                        </Frame>
+                        <Button Text="Crear Viaje" BackgroundColor="#4a4eff" 
+                        Margin="0,5,0,0" x:Name="btn_crear_viaje"
+                        TextColor="White" BorderColor="#1519c2"
+                        Clicked="btn_crear_viaje_Clicked"
+                        BorderWidth="1" CornerRadius="10"/>
+                        <Button Text="Ver vuelos" x:Name="btn_ver_vuelos" 
+                                Clicked="btn_ver_vuelos_Clicked"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

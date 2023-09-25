@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaBuscarVuelos">
+    <ScrollView>
+        <AbsoluteLayout>
+
+            <Image Source="avion2.jpg" Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All" />
+
+            <Label Text="Vuelos Disponibles" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" Margin="30,35,0,0" />
+            <Label Text="Elija su mejor horario de vuelo" FontSize="18" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" Margin="30,110,0,0" />
+
+
+            <StackLayout Margin="0,15,0,0" x:Name="stackLayout">
+            </StackLayout>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

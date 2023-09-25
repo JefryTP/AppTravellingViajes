@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Vistas.VistaPromociones">
+    <ScrollView>
+        <AbsoluteLayout>
+
+            <Image Source="avion2.jpg" Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All" />
+
+            <Label Text="Promociones" FontAttributes="Bold" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" Margin="30,20,0,0" />
+
+            <Frame Margin="14, 90, 30, 15" CornerRadius="20">
+                <AbsoluteLayout HeightRequest="130">
+
+                    <Image Source="trujillo.png" Aspect="AspectFill" WidthRequest="450" HeightRequest="170" Margin="-20, -20, -20, 0"/>
+
+                    <BoxView BackgroundColor="#80000000"
+                             AbsoluteLayout.LayoutFlags="All"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                             Margin="-20, -20, -20, -20"/>
+
+                    <Label Text="Viaje de Lima a Trujillo" FontAttributes="Bold" FontSize="20" TextColor="#ff8243" Margin="40, 10, 10, 80" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End" />
+
+                    <Button Clicked="btnViajar_Clicked" Text="Viaja ya!" TextColor="Black" BackgroundColor="#FFD700" FontSize="17" CornerRadius="20" Margin="280,80,-240,5"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End" />
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame Margin="14, 290, 30, 10" CornerRadius="20">
+                <AbsoluteLayout HeightRequest="130">
+
+                    <Image Source="cuzco.png" Aspect="AspectFill" WidthRequest="450" HeightRequest="170" Margin="-20, -20, -20, 0"/>
+
+                    <BoxView BackgroundColor="#80000000"
+                             AbsoluteLayout.LayoutFlags="All"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                             Margin="-20, -20, -20, -20"/>
+
+                    <Label Text="Viaje de Lima a Cuzco" FontAttributes="Bold" FontSize="20" TextColor="#ff8243" Margin="50, 10, 10, 80" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End" />
+
+                    <Button Clicked="btnViajar_Clicked" Text="Viaja ya!" TextColor="Black" BackgroundColor="#FFD700" FontSize="17" CornerRadius="20" Margin="280,80,-240,5"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="End" />
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame Margin="14, 490, 30, 0" CornerRadius="20">
+                <AbsoluteLayout HeightRequest="130">
+
+                    <Image Source="arequipa.png" Aspect="AspectFill" WidthRequest="450" HeightRequest="170" Margin="-20, -20, -20, 0"/>
+
+                    <BoxView BackgroundColor="#80000000"
+                             AbsoluteLayout.LayoutFlags="All"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                             Margin="-20, -20, -20, -20"/>
+
+                    <Label Text="Viaje de Lima a Arequipa" FontAttributes="Bold" FontSize="20" TextColor="#ff8243" Margin="30, 10, 10, 80" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End" />
+
+                    <Button Clicked="btnViajar_Clicked" Text="Viaja ya!" TextColor="Black" BackgroundColor="#FFD700" FontSize="17" CornerRadius="20" Margin="280,80,-240,5"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="End" />
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame Margin="14, 690, 30, 0" CornerRadius="20">
+                <AbsoluteLayout HeightRequest="130">
+
+                    <Image Source="tarapoto.png" Aspect="AspectFill" WidthRequest="450" HeightRequest="170" Margin="-20, -20, -20, 0"/>
+
+                    <BoxView BackgroundColor="#80000000"
+                             AbsoluteLayout.LayoutFlags="All"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                             Margin="-20, -20, -20, -20"/>
+
+                    <Label Text="Viaje de Lima a Tarapoto" FontAttributes="Bold" FontSize="20" TextColor="#ff8243" Margin="30, 10, 10, 80" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End" />
+
+                    <Button Clicked="btnViajar_Clicked" Text="Viaja ya!" TextColor="Black" BackgroundColor="#FFD700" FontSize="17" CornerRadius="20" Margin="280,80,-240,5"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="End" />
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame Margin="14, 890, 30, 12" CornerRadius="20">
+                <AbsoluteLayout HeightRequest="130">
+
+                    <Image Source="puerto.png" Aspect="AspectFill" WidthRequest="450" HeightRequest="170" Margin="-20, -20, -20, 0"/>
+
+                    <BoxView BackgroundColor="#80000000"
+                             AbsoluteLayout.LayoutFlags="All"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                             Margin="-20, -20, -20, -20"/>
+
+                    <Label Text="Viaje de Lima a Puerto Maldonado" FontAttributes="Bold" FontSize="20" TextColor="#ff8243" Margin="20, -2, 10, 80" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End" />
+
+                    <Button Clicked="btnViajar_Clicked" Text="Viaja ya!" TextColor="Black" BackgroundColor="#FFD700" FontSize="17" CornerRadius="20" Margin="280,80,-240,5"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="End" />
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame Margin="14, 1080, 30, 12" CornerRadius="20">
+                <AbsoluteLayout HeightRequest="130">
+
+                    <Image Source="ilo.png" Aspect="AspectFill" WidthRequest="450" HeightRequest="170" Margin="-20, -20, -20, 0"/>
+
+                    <BoxView BackgroundColor="#80000000"
+                             AbsoluteLayout.LayoutFlags="All"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                             Margin="-20, -20, -20, -20"/>
+
+                    <Label Text="Viaje de Lima a Ilo" FontAttributes="Bold" FontSize="20" TextColor="#ff8243" Margin="90, 9, 10, 80" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="End"/>
+
+                    <Button Clicked="btnViajar_Clicked" Text="Viaja ya!" TextColor="Black" BackgroundColor="#FFD700" FontSize="17" CornerRadius="20" Margin="280,80,-240,5"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="End" />
+                </AbsoluteLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>
